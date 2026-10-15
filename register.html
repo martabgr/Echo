@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Регистрация — Echo</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/app.min.js" defer></script>
+</head>
+
+<body>
+  <main class="auth-layout">
+    <aside class="auth-aside">
+      <a class="brand brand-small" href="index.html">
+        <span class="brand-name">echo</span>
+        <span class="brand-subtitle">ТВОЙ ЛИЧНЫЙ ДНЕВНИК</span>
+      </a>
+      <img class="aside-art" src="assets/echo-illustration.png" alt="">
+      <p class="quote">«Иногда, чтобы услышать себя, нужно просто записать.»</p>
+    </aside>
+
+    <section class="auth-content">
+      <a class="back-link" href="index.html">← На главную</a>
+      <h1>Регистрация</h1>
+      <p class="intro">Создайте аккаунт, чтобы сохранять записи и возвращаться к ним в любое время.</p>
+
+      <form id="registerForm" novalidate>
+        <label class="field">
+          <span>♙</span>
+          <input type="text" id="name" placeholder="Имя" required>
+        </label>
+
+        <label class="field">
+          <span>✉</span>
+          <input type="email" id="registerEmail" placeholder="E-mail" required>
+        </label>
+
+        <label class="field">
+                    <input type="password" id="registerPassword" placeholder="Пароль" required>
+          <button class="toggle-password" type="button" data-target="registerPassword">◉</button>
+        </label>
+
+        <label class="field">
+   
+          <input type="password" id="confirmPassword" placeholder="Повторите пароль" required>
+          <button class="toggle-password" type="button" data-target="confirmPassword">◉</button>
+        </label>
+
+        <p class="form-message" id="registerMessage"></p>
+        <button class="button button-primary submit-button" type="submit">Зарегистрироваться</button>
+      </form>
+
+      <p class="switch-link">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+    </section>
+  </main>
+</body>
+
+</html>
